@@ -8,9 +8,7 @@ pipeline {
       
     }
     stage('Build') {
-      steps {
-        sh 'docker build -t vanhauknc/jenkins-docker-hub .'
-      }
+      
     }
     
   }
