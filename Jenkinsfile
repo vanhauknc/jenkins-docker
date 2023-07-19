@@ -4,12 +4,10 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   stages {
-    stage('Test1'){
-      
+    stage('Clone'){
+      steps{
+        git 'https://github.com/vanhauknc/jenkins-docker.git'
+      }
     }
-    stage('Build') {
-      
-    }
-    
   }
 }
